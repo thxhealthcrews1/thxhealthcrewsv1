@@ -14,8 +14,8 @@ export default function WavyTitle({ lines, className = '' }: WavyTitleProps) {
       {lines.map((line, lineIndex) => (
         <div
           key={lineIndex}
-          className="font-fredoka text-3xl sm:text-4xl md:text-5xl font-medium text-sky-100 leading-snug tracking-wide animate-soft-float"
-          style={{ animationDelay: `${lineIndex * 0.45}s`, WebkitTextStroke: '1.5px #1e3a8a' }}
+          className="font-fredoka text-3xl sm:text-4xl md:text-5xl font-medium text-white leading-snug tracking-wide animate-soft-float"
+          style={{ animationDelay: `${lineIndex * 0.45}s`, WebkitTextStroke: '2px #1e3a8a', paintOrder: 'stroke fill' }}
         >
           {line.split('').map((char) => {
             const delay = charIndex * 0.09;
