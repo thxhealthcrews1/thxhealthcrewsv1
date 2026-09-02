@@ -239,8 +239,8 @@ export default function App() {
 
       {/* Hint overlay */}
       {modalStep === 'IDLE' && !selectedPin && !isLoading && !showSuggestion && (
-        <div className="fixed bottom-[63px] left-1/2 -translate-x-1/2 z-10 pointer-events-none">
-          <div className="bg-slate-900/70 backdrop-blur-sm text-slate-300 text-xs px-4 py-2 rounded-full border border-slate-700/50 animate-[fadeIn_0.5s_ease-out]">
+        <div className="fixed bottom-[63px] left-0 right-0 z-10 pointer-events-none flex justify-center px-4">
+          <div className="bg-slate-900/70 backdrop-blur-sm text-slate-300 text-xs px-4 py-2 rounded-full border border-slate-700/50 animate-[fadeIn_0.5s_ease-out] text-center max-w-[90vw]">
             Tap the globe to add a healthworker thanks.
           </div>
         </div>
